@@ -11,7 +11,7 @@ import {
 import { Icon, IconName } from './icon/icon';
 
 /** ====== PREENCHER ANTES DE PUBLICAR ====== */
-const WHATSAPP_NUMBER = '55XXXXXXXXXXX'; // DDI + DDD + número, só dígitos
+const WHATSAPP_NUMBER = '5534999411829'; // DDI + DDD + número, só dígitos
 const CIDADE = '[cidade]';
 const CREF = '[número]';
 const ANOS = '[x]';
@@ -54,7 +54,7 @@ export class App {
   protected readonly whatsapp = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
     'Oi Daniela! Vim pelo site e quero começar meu treino.',
   )}`;
-  protected readonly whatsappDisplay = '[número]';
+  protected readonly whatsappDisplay = '(34) 99941-1829';
 
   protected readonly menuOpen = signal(false);
   protected readonly slide = signal(0);
