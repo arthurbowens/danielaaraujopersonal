@@ -1,3 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
-
 @import "tailwindcss";
+
+@theme {
+  --color-ink: #0c0910;
+  --color-ink-2: #141020;
+  --color-ink-3: #1d1729;
+  --color-brand: #b794f6;
+  --color-brand-dark: #8b5cf6;
+  --color-line: rgb(255 255 255 / 0.1);
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+  background: var(--color-ink);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: #e8eaed;
+  background: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.02;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 999px;
+  padding: 0.95rem 1.7rem;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.btn-primary {
+  background: var(--color-brand);
+  color: #1a0f2e;
+  box-shadow: 0 10px 30px -8px rgb(183 148 246 / 0.55);
+}
+.btn-primary:hover {
+  background: #d0b9ff;
+  transform: translateY(-2px);
+}
+.btn-ghost {
+  border: 1px solid var(--color-line);
+  color: #fff;
+}
+.btn-ghost:hover {
+  background: rgb(255 255 255 / 0.07);
+}
+
+.eyebrow {
+  color: var(--color-brand);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: clamp(2.2rem, 6vw, 3.6rem);
+  color: #fff;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+details[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
