@@ -32,13 +32,9 @@ interface Plan {
   featured: boolean;
 }
 interface Result {
-  name: string;
-  months: string;
+  caption: string;
+  alt: string;
   image?: string;
-}
-interface Testimonial {
-  text: string;
-  name: string;
 }
 
 @Component({
@@ -145,22 +141,18 @@ export class App {
     },
   ];
 
-  /** Troque `image` pelas fotos autorizadas (ex.: 'images/resultados/maria.jpg'). */
+  /** Para adicionar mais resultados, coloque a foto autorizada em public/images/resultados e inclua aqui. */
   protected readonly results: Result[] = [
-    { name: '[Nome da aluna]', months: '[X]' },
-    { name: '[Nome da aluna]', months: '[X]' },
-    { name: '[Nome da aluna]', months: '[X]' },
-    { name: '[Nome da aluna]', months: '[X]' },
-    { name: '[Nome da aluna]', months: '[X]' },
-  ];
-
-  protected readonly testimonials: Testimonial[] = [
     {
-      text: 'Antes eu treinava sem direção. Com a Daniela eu entendi o que estava fazendo e comecei a ver resultado de verdade.',
-      name: '[Nome]',
+      caption: 'Lohanny | Em evolução constante',
+      alt: 'Antes e depois da aluna Lohanny na academia',
+      image: 'images/resultados/lohanny.jpg',
     },
-    { text: '[Depoimento real da aluna]', name: '[Nome]' },
-    { text: '[Depoimento real da aluna]', name: '[Nome]' },
+    {
+      caption: 'Alunas | De 2024 para 2026',
+      alt: 'Grupo de alunas na academia em 2024 e em 2026',
+      image: 'images/resultados/alunas-2024-2026.jpg',
+    },
   ];
 
   protected readonly plans: Plan[] = [
