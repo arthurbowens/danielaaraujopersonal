@@ -111,9 +111,10 @@
             </li>
           }
         </ul>
-        <p class="mt-6 flex items-center gap-3 text-lg font-semibold text-brand">
-          <app-icon name="arrow-right" /> Se você se identificou, o método da Daniela foi feito para você.
-        </p>
+        <p class="mt-6 text-lg font-semibold text-white">Se você se identificou, o método da Daniela foi feito para você.</p>
+        <a [href]="whatsapp" target="_blank" rel="noopener" class="btn btn-primary mt-5 w-full sm:w-auto">
+          Quero conhecer o método <app-icon name="arrow-right" />
+        </a>
       </div>
     </div>
   </section>
@@ -364,10 +365,10 @@
       </p>
     </div>
     <div class="flex flex-col gap-3">
-      <a [href]="instagramUrl" target="_blank" rel="noopener" class="flex items-center gap-3 text-white/80 transition hover:text-brand">
+      <a [href]="instagramUrl" target="_blank" rel="noopener" class="btn btn-ghost !justify-start !px-5 !py-3">
         <app-icon name="instagram" /> &#64;{{ instagram }}
       </a>
-      <a [href]="whatsapp" target="_blank" rel="noopener" class="flex items-center gap-3 text-white/80 transition hover:text-brand">
+      <a [href]="whatsapp" target="_blank" rel="noopener" class="btn btn-ghost !justify-start !px-5 !py-3">
         <app-icon name="whatsapp" /> WhatsApp: {{ whatsappDisplay }}
       </a>
     </div>
