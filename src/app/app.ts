@@ -153,6 +153,11 @@ export class App {
       alt: 'Grupo de alunas na academia em 2024 e em 2026',
       image: 'images/resultados/alunas-2024-2026.jpg',
     },
+    {
+      caption: 'Aluna | Resultado com acompanhamento',
+      alt: 'Antes e depois de uma aluna da Daniela na academia',
+      image: 'images/resultados/aluna-3.jpg',
+    },
   ];
 
   protected readonly plans: Plan[] = [
